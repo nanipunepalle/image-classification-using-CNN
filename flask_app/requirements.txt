@@ -1,0 +1,6 @@
+flask
+numpy
+keras
+tensorflow
+sklearn
+pil
