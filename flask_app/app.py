@@ -1,4 +1,4 @@
-from flask import Flask,render_template, request
+from flask import Flask,render_template, request, jsonify
 from model import predict_butterfly
 
 
@@ -16,9 +16,10 @@ def predict():
         file=request.files['image']
         img = file.read()
         butterfly = predict_butterfly(img)
-        return {"message": butterfly}, 200
-    return {"message": "error occured try again"}, 200
+        # print(butterfly)
+        return jsonify({"message": butterfly})
+    return None
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(port=4001)
 
