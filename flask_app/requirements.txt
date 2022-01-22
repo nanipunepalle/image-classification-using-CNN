@@ -1,9 +1,12 @@
 Flask==2.0.2
 gunicorn==20.1.0
-keras==2.7.0
-Keras-Preprocessing==1.1.2
+# keras==2.7.0
 numpy==1.22.1
 Pillow==9.0.0
-scikit-learn==1.0.2
-sklearn==0.0
-tensorflow==2.7.0
+# scikit-learn==1.0.2
+# sklearn==0.0
+# tensorflow==2.7.0
+tensorflow.keras.preprocessing
+keras.preprocessing.image
+keras.models 
+sklearn.preprocessing
